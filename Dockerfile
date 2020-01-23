@@ -15,5 +15,7 @@ RUN curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2
 RUN chmod +x /usr/local/bin/aws-iam-authenticator
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["help"]
