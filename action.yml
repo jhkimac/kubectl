@@ -1,0 +1,6 @@
+name: EKS kubectl
+description: "Runs kubectl with AWS-Authenticator for EKS Deployment. Config with secret KUBE_CONFIG_DATA, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY or use aws-actions/configure-aws-credentials@v1 for AWS secrets config."
+author: 'Jung Hong Kim'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
